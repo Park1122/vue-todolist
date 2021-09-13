@@ -26,7 +26,7 @@ export default {
         },
         toggleComplete(todoItem) {
             todoItem.completed = !todoItem.completed;
-            localStorage.removeItem(todoItem, item);
+            localStorage.removeItem(todoItem.item);
             localStorage.setItem(todoItem.item, JSON.stringify(todoItem));
         }
     },
